@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function gred(markah, lokasi) {
+        document.getElementById(lokasi).innerText = markah
+    }
+</script>
+
+<body>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+    <body>
+
+        <h2>Students Gred</h2>
+        <table style="width:100%">
+            <tr>
+                <th>SUBJECT</th>
+                <th>MARKS</th>
+                <th>GRED</th>
+            </tr>
+            <tr>
+                <td>Bahasa Melayu 1</td>
+                <td text align="center">
+                    <input type="number" min="0" max="100" required onchange="gred(this.value,'result1');">
+                </td>
+                <td id="result1"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Bahasa Melayu 2</td>
+                <td text align="center">
+                    <input type="number" min="0" max="100" required onchange="gred(this.value,'result2');">
+                </td>
+                <td id="result2"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td text align="center">
+                    <input type="number" min="0" max="100" required onchange="gred(this.value,'result3');">
+                </td>
+                <td id="result3"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td text align="center">
+                    <input type="number" min="0" max="100" required onchange="gred(this.value,'result4');">
+                </td>
+                <td id="result4"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td text align="center">
+                    <input type="number" min="0" max="100" required onchange="gred(this.value,'result5');">
+                </td>
+                <td id="result5"></td>
+            </tr>
+            </tr>
+        </table>
+
+
+    </body>
+
+</html>
